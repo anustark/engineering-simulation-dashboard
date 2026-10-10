@@ -2,6 +2,8 @@
 
 A local FastAPI and React dashboard for importing simulation CSV files, viewing frequency response, comparing revisions, and tracking engineering demands. The assessment is limited to the stated criterion; it is not a complete engineering safety assessment.
 
+**GitHub repository:** [anustark/engineering-simulation-dashboard](https://github.com/anustark/engineering-simulation-dashboard)
+
 ## Requirements
 
 - Python 3.10 or newer
@@ -87,4 +89,4 @@ The current suite has five assessment tests (at-limit pass, above-limit fail, in
 
 Implemented: local SQLite persistence, CSV import on demand, result and sample APIs, frequency-response and comparison charts, demand create/list/update endpoints, status filtering, a link back to the originating result view, and component-based revision history in the demand table.
 
-Not implemented or incomplete relative to `task.md`: project selection is fixed; demands are not explicitly linked to every revision as database records; the history is a component-based display rather than immutable demand-to-revision history; there is no navigation from a demand to a revision comparison; the example rev1 demands are not generated automatically; and no GitHub repository URL is supplied. Revision-history ordering assumes names like `rev1`, `rev2`, and is not a general revision-ordering scheme.
+Not implemented or incomplete relative to `task.md`: project selection is fixed; demands are not explicitly linked to every revision as database records; the history is a component-based display rather than immutable demand-to-revision history; there is no navigation from a demand to a revision comparison; and the example rev1 demands are not generated automatically. Revision-history ordering assumes names like `rev1`, `rev2`, and is not a general revision-ordering scheme.
